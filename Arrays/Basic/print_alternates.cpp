@@ -21,3 +21,8 @@ int main()
         cout<<x<<" ";
     }
 }
+
+// Recursive approach
+#include<iostream>
+#include<vector>
+using namespace std;
