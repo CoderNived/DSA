@@ -58,3 +58,12 @@ def tribonacci(n):
 print(tribonacci(4))
 
 #  Min Cost Climbing Stairs Problem
+def climbMin(cost):
+    n = len(cost)
+    mincost= [0]*(n+1)
+    mincost[0]=cost[0]
+    mincost[1]=cost[1]
+    for i in range(2,n):
+        mincost[i]=cost[i]+min(mincost[i-1],mincost[i-2])
+    return min(mincost[n-1],mincost[n-2])
+print(climbMin([10,15,20]))
